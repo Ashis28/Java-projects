@@ -1,0 +1,2 @@
+91;paracetamol;200;100;40;For fever and pain
+92;Saffrin;300;100;40;For gum 
