@@ -12,34 +12,36 @@ package Login;
 import java.util.ArrayList;
 
 public class BillingInfo {
-    Patient patient;
-    ArrayList<Medicine> medicines;
-    String recomendation,date;
-    int fee;
+    private int patientId;
+    private ArrayList<Integer> medicineId;
+    private String recomendation,date;
+    private int fee;
 
     public BillingInfo() {
-        this.patient = null;
-        this.medicines = new ArrayList<>();
+        this.patientId = 0;
+        this.medicineId = new ArrayList<>();
         this.recomendation = "";
         this.date = "";
         this.fee = 0;
     }
 
-    public Patient getPatient() {
-        return patient;
+    public int getPatientId() {
+        return patientId;
     }
 
-    public void setPatient(Patient patient) {
-        this.patient = patient;
+    public void setPatientId(int patientId) {
+        this.patientId = patientId;
     }
 
-    public ArrayList<Medicine> getMedicines() {
-        return medicines;
+    public ArrayList<Integer> getMedicineId() {
+        return medicineId;
     }
 
-    public void setMedicines(Medicine medicines) {
-        this.medicines.add(medicines);
+    public void setMedicineId(int medicineId) {
+        this.medicineId.add(medicineId);
     }
+
+    
 
     public String getRecomendation() {
         return recomendation;
